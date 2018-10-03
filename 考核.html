@@ -1,0 +1,998 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>考核</title>
+    <style>
+        .center{
+            margin: 0 10%;
+        }
+        a {text-decoration:none }
+        li {
+            list-style: none;
+        }
+        .line{
+            border: gray 1px solid;
+        }
+        .navbox{
+            position: fixed;
+            width: 100%;
+        }
+        .nav{
+            float: left;
+            width: 50%;
+            text-align: center;
+            background-color: #ffffff;
+        }
+        .nav .nav1 ul li{
+            float: left;
+            width: 25%;
+        }
+        .nav .nav2 {
+            padding-left: 40%;
+        }
+        .nav .nav2 ul li {
+            float: left;
+            width: 50%;
+            padding-bottom: 26px;
+        }
+        .start1{
+            border: #000fff solid 1px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #000fff;
+            padding: 5px;
+            background-color: #ffffff;
+        }
+        .heading{
+            font-weight: bolder;
+            font-size: 40px;
+            text-align: center;
+        }
+        .start2 {
+            border: #000fff solid 1px;
+            border-radius: 5px;
+            font-weight: bold;
+            padding: 10px;
+            text-decoration: none;
+            float: left;
+            margin: 0 40%;
+            color: #eeeeee;
+            background-color: #000fff;
+        }
+        .content{
+            text-align: center;
+            margin: 30px 300px;
+        }
+        .img1{
+            width: 60%;
+            text-align: center;
+        }
+
+        #background1{
+            background-color: #eeeeee;
+        }
+        .row1 .col1 {
+            float: left;
+            width: 33.3%;
+            text-align: center;
+        }
+        .row2 .col2 {
+            float: left;
+            width: 33.3%;
+            text-align: center;
+        }
+        .row2 .col2 .heading1{
+            margin: 5%;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .row2 .col2 .content1{
+            margin: 0 10% ;
+            text-align: center;
+        }
+        .row3 .col3 {
+            float: left;
+            width: 50%;
+            text-align:left;
+        }
+        .row3 .col3 .img{
+            margin-left: 20%;
+        }
+        .row3 .col3 .content1{
+            font-size: 3px;
+            margin-left: 35%;
+            margin-right: 20%;
+        }
+        .row3 .col3 .content2{
+            font-size: 35px;
+            font-weight: bolder;
+            margin-left: 35%;
+            margin-right: 20%;
+        }
+        .row3 .col3 .content3{
+            font-size: 20px;
+            margin-left: 35%;
+            margin-right: 20%;
+        }
+        .row4 .col4 {
+            float: left;
+            width: 40%;
+            text-align:left;
+        }
+        .row4 .col4 .img{
+
+        }
+        .row4 .col4 .content1{
+            font-size: 3px;
+            margin-left: 30%
+
+        }
+        .row4 .col4 .content2{
+            font-size: 35px;
+            font-weight: bolder;
+            margin-left: 30%
+
+        }
+        .row4 .col4 .content3{
+            font-size: 20px;
+            margin-left: 30%
+
+        }
+        .row5 .col5 {
+            float: left;
+            width: 30%;
+            text-align:left;
+            padding: 4%;
+            margin-left: 7%;
+            margin-right: 1%;
+            background-color: #ffffff;
+        }
+        .row5 .col5 .heading{
+            font-weight: bold;
+            font-size: 20px;
+            text-align: left;
+        }
+        .row6 .col6 {
+            float: left;
+            width: 33.3%;
+            text-align: left;
+        }
+        .row7 .col7 {
+            float: left;
+            width: 30%;
+            text-align: left;
+            margin:1%;
+        }
+        .row7 .col7 .box1{
+            background-color: #fdffd4;
+        }
+        .row7 .col7 .content2{
+            font-weight: bold;
+            font-size: 20px;
+            text-align: center;
+        }
+        .row7 .col7 .content1{
+            text-align: center;
+        }
+        .row7 .col7 .price{
+            font-weight: bolder;
+            font-size: 50px;
+            text-align: center;
+            color: #000fff;
+        }
+        .row7 .col7 .box2{
+             background-color: #ffffff;
+         }
+        .row7 .col7 .list1 {
+            margin: 0 10%;
+        }
+        .row7 .col7 .list2 {
+            margin: 0 10%;
+            color: gray;
+        }
+
+        .row7 .col7 .box3{
+            background-color: #ffffff;
+        }
+        .row7 .col7 .box3 .content1{
+            text-align: center;
+            font-style: italic;
+        }
+        .row7 .col7 .box3 .content3{
+            text-align: center;
+        }
+        .row7 .col7 .button{
+            text-align: center;
+            font-weight: bold;
+            background-color: #000fff;
+            border-radius: 3px;
+            margin: 5% 20%;
+            padding: 3% 5%;
+            color: #ffffff;
+        }
+        .row7 .col7 .button2{
+            text-align: center;
+            font-weight: bold;
+            background-color: #000fff;
+            border-radius: 3px;
+            margin: 5% 38%;
+            padding: 3% 5%;
+            color: #ffffff;
+        }
+        .row8{
+            background-color: #ffffff;
+            padding-left: 5%;
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+        .row8 .img{
+            background-color: #ffffff;
+            float: left;
+            width: 20%;
+            padding-top: 3%;
+            text-align: center;
+        }
+        .row8 .content{
+            text-align: left;
+        }
+        .row8 .content .heading{
+            font-weight: bold;
+            font-size: 30px;
+            text-align: left;
+        }
+        .footer{
+            background-color: #ffffff;
+            padding-left:15%;
+            padding-right: 15%;
+            padding-top: 40px;
+        }
+        .footer .row1{
+            float: left;
+            width: 25%;
+        }
+        .footer .row1 .head{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .footer .row1 a{
+            color: grey;
+        }
+        .footer .row2{
+            float: left;
+            width: 50%;
+        }
+        .footer .row2 .head{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .footer .row2 .email{
+            float: left;
+            width: 75%;
+        }
+        .footer .row2 .sub{
+            float: left;
+            width: 20%;
+            border: #000fff solid 1px;
+            background-color: white;
+            font-weight: bold;
+            color: #000fff;
+            text-align: center;
+            padding: 8px;
+            border-radius: 5px;
+        }
+        .connect{
+            margin-left: 20%;
+        }
+        .connect ul li{
+            float: left;
+            width: 30%;
+        }
+        .connect .box1{
+            float: left;
+            width: 50%;
+            padding-top: 25px;
+        }
+        .connect .box2{
+            float: left;
+            width: 50%;
+        }
+        .footer .bottom ul li{
+            float: left;
+            width: 15%;
+        }
+
+
+        </style>
+
+</head>
+<body bgcolor= #ecf2ff>
+
+<div class="navbox" >
+    <div class="nav">
+        <div class="nav1">
+        <ul>
+            <li><a href="#"><img src= logo.png></a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Enterprise</a></li>
+            <li><a href="#">Pricing</a></li>
+        </ul>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="nav2">
+        <ul>
+            <li><a href="#">Log in</a></li>
+            <li><a class="start1" href="#">Get started</a></li>
+        </ul>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="heading">Built for professional teams</div>
+<p class="content">Bitbucket is more than just Git code management. Bitbucket gives teams one place to plan projects, collaborate on code, test, and deploy.</p>
+<a class="start2" href="#">Get started for free</a>
+<br>
+<br>
+<br>
+<div class="content">Or host it yourself with <a href="#">Bitbucket Enterprise</a></div>
+<div style="text-align: center"><img class="img1" src="00_HeroImage.png"></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div id="background1">
+<div class="row1">
+    <div class="col1"><img style="width: 30%" src="File%20Cabinet@2x.png"></div>
+    <div class="col1"><img style="width: 50%" src="integration.png"></div>
+    <div class="col1"><img style="width: 40%" src="continuous-delivery.png"></div>
+</div>
+<div class="row2">
+    <div class="col2">
+        <div class="heading1"> Free unlimited private repositories</div>
+        <div class="content1">Free for small teams under 5 and priced to scale with Standard ($2/user/mo) or Premium ($5/user/mo) plans.</div>
+    </div>
+    <div class="col2">
+        <div class="heading1"> Best-in-class Jira & Trello integration</div>
+        <div class="content1">Keep your projects organized by creating Bitbucket branches right from Jira issues or Trello cards.</div>
+    </div>
+    <div class="col2">
+        <div class="heading1">Built-in Continuous Delivery</div>
+        <div class="content1">Build, test and deploy with integrated CI/CD. Benefit from configuration as code and fast feedback loops.</div>
+    </div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="row3">
+    <div class="col3"><div class="img" ><img style="width: 130%" src="01_CodeCollaboration.png"></div>
+    </div>
+    <div class="col3"><div class="content1">CODE COLLABORATION</div>
+        <br>
+                      <div class="content2">Build quality software with code review</div>
+        <br>
+                      <div class="content3">Approve code review more efficiently with pull requests. Create a merge checklist with designated approvers and hold discussions right in the source code with inline comments.</div>
+    </div>
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="row4">
+    <div class="col4"><div class="content1">CONTINUOUS DELIVERY</div>
+        <br>
+        <div class="content2">Deploy often with built-in continuous delivery</div>
+        <br>
+        <div class="content3">Bitbucket Pipelines with Deployments lets you build, test and deploy with integrated CI/CD. Benefit from configuration as code and fast feedback loops.</div>
+        <br>
+        <div class="content3" ><a href="#">Learn more</a></div>
+    </div>
+    <div class="col4"><div class="img" ><img style="width: 130%" src= 02_ContinuousDelivery.png></div>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="row3">
+    <div class="col3"><div class="img" ><img style="width: 130%" src= 03_Security.png></div>
+    </div>
+    <div class="col3"><div class="content1">SECURITY</div>
+        <br>
+        <div class="content2">Secure your workflow</div>
+        <br>
+        <div class="content3">Know your code is secure in the Cloud with IP whitelisting and required 2-step verification. Restrict access to certain users, and control their actions with branch permissions and merge checks for quality code.</div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
+<div class="heading">New to Git?</div>
+<p class="content">No problem. We have resources to get you up to speed, quickly.</p>
+<div class="center">
+    <div class="row5">
+        <div class="col5">
+            <div class="img"><img src="QQ图片20181002114924.png"></div>
+            <div class="heading">Learn Git with interactive tutorials</div>
+            <br>
+            <div>Make Bitbucket your Git sandbox with tutorials that bring you up to speed with Git and help you build effective workflows.</div>
+            <br>
+            <br>
+            <div><a href="#">Learn more</a></div>
+        </div>
+    </div>
+    <div class="row5">
+        <div class="col5">
+            <div class="img"><img src="QQ图片20181002021817.png"></div>
+            <div class="heading">Download Sourcetree, our free Git GUI.</div>
+            <br>
+            <div>Say goodbye to the command line - Sourcetree simplifies how you interact with your Git repositories so you can focus on coding.</div>
+            <br>
+            <div><a href="#">Learn more</a></div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<div class="heading">Integrations: Bitbucket, but better
+</div>
+<br>
+<div class="center">
+    <div class="content">Start with Bitbucket, then bring in the tools you already use to build better software</div>
+    <div class="row6">
+        <div class="col6"><img style="width: 50%" src= "integration.png"></div>
+        <div class="col6"><img style="width: 35%" src="Integration%20Puzzle@2x.png"></div>
+        <div class="col6"><img style="width: 38%" src="Webhooks@2x.png"> </div>
+    </div>
+    <div class="row7">
+        <div class="col7">
+            <br>
+            <div class="heading1">Jira Software</div>
+            <br>
+            <div class="content1">Improve efficiency by connecting branches, commits, and pull requests to Jira Software issues.</div>
+            <br>
+            <div class="content1"><a href="#">See all integrations</a></div>
+        </div>
+        <div class="col7">
+            <br>
+            <div class="heading1"> Connect framework</div>
+            <br>
+            <div class="content1">Customize Bitbucket your way with apps that embed right in Bitbucket’s UI, built with Bitbucket Connect.</div>
+        </div>
+        <div class="col7">
+            <br>
+            <div class="heading1">Trigger webhooks</div>
+            <br>
+            <div class="content1">Integrate easily with systems you already use in your day-to-day using Bitbucket webhooks.</div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="heading">More than 1 million teams and 6 million developers love Bitbucket</div>
+<br>
+<div class="heading"><img src="customers-image.png"></div>
+<br>
+<br>
+<br>
+<br>
+    <br>
+<div class="line"></div>
+<br>
+<br>
+<br>
+<br>
+
+<div class="center">
+    <div class="heading">Simple plans hosted in the cloud. </div>
+    <div class="heading">Priced to scale.</div>
+    <br>
+    <br>
+    <div class="row7">
+        <div class="col7">
+            <div class="box1">
+                <br>
+                <br>
+                <div class="content2">Free</div>
+                <br>
+                <br>
+                <div class="content1">for small teams</div>
+                <br>
+                <br>
+                <div class="price">$0</div>
+                <br>
+                <br>
+                <div class="content1">/ user / month</div>
+                <br>
+                <br>
+                <div class="content2">Free for up to 5 users</div>
+                <br>
+                <br>
+            </div>
+            <div class="box2">
+                <br>
+                <br>
+                <div class="list1"><img src= QQ图片20181002141439.png>Unlimited private repos</div>
+                <br>
+                <div class="list1"><img src= QQ图片20181002141439.png>Jira Software integration</div>
+                <br>
+                <div class="list1"><img src= QQ图片20181002141439.png>Projects</div>
+                <br>
+                <div class="list1"><img src= QQ图片20181002141439.png>Pipelines</div>
+                <br>
+                <div class="list2"><img src= QQ图片20181002141735.png>Unlimited users</div>
+                <br>
+                <div class="list2"><img src= QQ图片20181002141735.png>Merge checks</div>
+                <br>
+                <div class="list2"><img src= QQ图片20181002141735.png>IP Whitelisting</div>
+                <br>
+                <div class="list2"><img src= QQ图片20181002141735.png>Required two-step verification</div>
+                <br>
+                <div class="list2"><img src= QQ图片20181002141735.png>Smart Mirroring</div>
+                <br>
+                <br>
+            </div>
+            <div class="line"></div>
+            <div class="box3">
+                <br>
+                <br>
+                <div class="content1">Included with your account:</div>
+                <br>
+                <div class="content3">*Build minutes: 50 mins/mo</div>
+                <br>
+                <div class="content3">*File storage: 1GB/mo</div>
+                <br>
+                <br>
+            </div>
+            <br>
+            <br>
+            <div><a class="button" href="#">Get started for free</a></div>
+        </div>
+    </div>
+    <div class="row7">
+        <div class="col7">
+            <div class="box1">
+                <br>
+                <br>
+                <div class="content2">Standard</div>
+                <br>
+                <br>
+                <div class="content1">for growing teams</div>
+                <br>
+                <br>
+                <div class="price">$2</div>
+                <br>
+                <br>
+                <div class="content1">/ user / month</div>
+                <br>
+                <br>
+                <div class="content2">Starts at $10 /month</div>
+                <br>
+                <br>
+            </div>
+            <div class="box2">
+                <br>
+                <br>
+                <div class="list1"><img src= QQ图片20181002141439.png>Unlimited private repos</div>
+                <br>
+                <div class="list1"><img src= QQ图片20181002141439.png>Jira Software integration</div>
+                <br>
+                <div class="list1"><img src= QQ图片20181002141439.png>Projects</div>
+                <br>
+                <div class="list1"><img src= QQ图片20181002141439.png>Pipelines</div>
+                <br>
+                <div class="list1"><img src= QQ图片20181002141439.png>Unlimited users</div>
+                <br>
+                <div class="list2"><img src= QQ图片20181002141735.png>Merge checks</div>
+                <br>
+                <div class="list2"><img src= QQ图片20181002141735.png>IP Whitelisting</div>
+                <br>
+                <div class="list2"><img src= QQ图片20181002141735.png>Required two-step verification</div>
+                <br>
+                <div class="list2"><img src= QQ图片20181002141735.png>Smart Mirroring</div>
+                <br>
+                <br>
+            </div>
+            <div class="line"></div>
+            <div class="box3">
+                <br>
+                <br>
+                <div class="content1">Included with your account:</div>
+                <br>
+                <div class="content3">*Build minutes: 500 mins/mo</div>
+                <br>
+                <div class="content3">*File storage: 5GB/mo</div>
+                <br>
+                <br>
+            </div>
+            <br>
+            <br>
+            <div><a class="button2" href=#>Try it</a></div>
+        </div>
+    </div>
+    <div class="row7">
+        <div class="col7">
+            <div class="box1">
+                <br>
+                <br>
+                <div class="content2">Premium</div>
+                <br>
+                <br>
+                <div class="content1">for large teams</div>
+                <br>
+                <br>
+                <div class="price">$5</div>
+                <br>
+                <br>
+                <div class="content1">/ user / month</div>
+                <br>
+                <br>
+                <div class="content2">Starts at $25 /month</div>
+                <br>
+                <br>
+            </div>
+            <div class="box2">
+                <br>
+                <br>
+                <div class="list1"><img src= QQ图片20181002141439.png>Unlimited private repos</div>
+                <br>
+                <div class="list1"><img src= QQ图片20181002141439.png>Jira Software integration</div>
+                <br>
+                <div class="list1"><img src= QQ图片20181002141439.png>Projects</div>
+                <br>
+                <div class="list1"><img src= QQ图片20181002141439.png>Pipelines</div>
+                <br>
+                <div class="list1"><img src= QQ图片20181002141439.png>Unlimited users</div>
+                <br>
+                <div class="list1"><img src= QQ图片20181002141439.png>Merge checks</div>
+                <br>
+                <div class="list1"><img src= QQ图片20181002141439.png>IP Whitelisting</div>
+                <br>
+                <div class="list1"><img src= QQ图片20181002141439.png>Required two-step verification</div>
+                <br>
+                <div class="list1"><img src= QQ图片20181002141439.png>Smart Mirroring</div>
+                <br>
+                <br>
+            </div>
+            <div class="line"></div>
+            <div class="box3">
+                <br>
+                <br>
+                <div class="content1">Included with your account:</div>
+                <br>
+                <div class="content3">*Build minutes: 1000 mins/mo</div>
+                <br>
+                <div class="content3">*File storage: 10GB/mo</div>
+                <br>
+                <br>
+            </div>
+            <br>
+            <br>
+            <div><a class="button2" href="#">Try it</a></div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="content">*Build minutes are for <a href="#">Bitbucket Pipelines</a> and File storage is for <a href="#">Git Large File Storage (LFS). </a>Build minutes and file storage are shared among all users on an account. </div>
+<br>
+<br>
+<br>
+<div class="center">
+    <div class="row8">
+        <div class="img"><img src= Server%20Cluster@2x.png></div>
+        <div class="content">
+            <div class="heading" >Want to host on your own server?</div>
+            <br>
+            <div class="content1">Get full control of your source code with Bitbucket Server. As your
+                team and workflow matures, graduate from a single server
+                deployment to a highly available, active-cluster with Bitbucket Data
+                Center.</div>
+            <br>
+            <a href="#">Bitbucket Server</a>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="heading">A better way to build software</div>
+<br>
+<br>
+<div class="start2">Get started for free</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="footer">
+    <div class="row1">
+        <div class="head">Bitbucket</div>
+        <br>
+        <div><a href="#">Blog</a></div>
+        <div><a href="#">API</a></div>
+        <div><a href="#">Site status</a></div>
+    </div>
+    <div class="row1">
+        <div class="head">Resources</div>
+        <br>
+        <div><a href="#">Technical support</a></div>
+        <div><a href="#">Documentation</a></div>
+        <div><a href="#">Plans & pricing</a></div>
+        <div><a href="#">What is Version Control?</a></div>
+    </div>
+    <div class="row2">
+        <div class="head">Connect with us</div>
+        <br>
+        <div>Sign up for Git articles and resources:</div>
+        <br>
+        <div>
+            <div class= "email"><input type="text" style="height: 40px;width: 350px "  height="5000px" placeholder="Email address"></div>
+            <div class="sub"><a href="#">Subscribe</a></div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="connect">
+            <div class="box1" >Connect with Bitbucket</div>
+            <div class="box2">
+                <ul>
+                    <li><a href="#"><img src="facebook.png"></a></li>
+                    <li><a href="#"><img src="twwiter.png"></a></li>
+                    <li><a href="#"><img src="google.png"></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="line"></div>
+    <div class="bottom">
+        <ul>
+            <li><a href="#"><img src="ATLASSIAN.png"></a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Terms of use</a></li>
+            <li><a href="#">Trust & security</a></li>
+            <li>Copyright © 2018</li>
+        </ul>
+        <div><a href="#"> View all Atlassian products</a></div>
+    </div>
+</div>
+</body>
+
+</html>
